@@ -1,6 +1,6 @@
 import { test } from '@playwright/test';
 
-test('has title', async ({ page }) => {
+test('set different viewports', async ({ page }) => {
   await page.goto('https://www.otto.de/customer-registration/customerAccount');
 
   await page.getByTestId('fti-registration-password-input').fill('1')
